@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gastá la Plata de Adorni</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700;900&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ── TOP BAR ────────────────────────────────────────────────── -->
+  <div id="topbar">
+    <h1>Gastá la plata de Adorni</h1>
+    <div id="balance">$960.000.000</div>
+    <div id="progress-wrap">
+      <div id="progress-track">
+        <div id="progress-fill"></div>
+      </div>
+      <div id="pct-label">0% gastado &nbsp;·&nbsp; ≈ USD 800.000 no declarados</div>
+    </div>
+  </div>
+
+  <!-- ── WIN BANNER ─────────────────────────────────────────────── -->
+  <div id="banner">
+    🎉 ¡Gastaste todo! Y Adorni dice que todo está declarado. ¿Le creés?
+  </div>
+
+  <!-- ── MAIN LAYOUT ─────────────────────────────────────────────── -->
+  <div id="layout">
+
+    <!-- Items grid (populated by app.js) -->
+    <div id="items-wrap"></div>
+
+    <!-- Receipt sidebar -->
+    <div id="receipt-panel">
+      <div id="receipt-heading">Tu recibo</div>
+      <div id="receipt-body">
+        <div id="receipt-empty">Todavía no gastaste nada 👀</div>
+      </div>
+      <div id="reset-wrap">
+        <button id="reset-btn" onclick="resetAll()">↺ Empezar de nuevo</button>
+      </div>
+    </div>
+
+  </div><!-- /#layout -->
+
+  <!-- ── FOOTER ─────────────────────────────────────────────────── -->
+  <footer>
+    Parodia periodística · Causa por enriquecimiento ilícito · Fiscal Gerardo Pollicita (mayo 2026)<br />
+    Fuentes: La Nación · Infobae · Clarín · elDiarioAR &nbsp;·&nbsp; Tipo de cambio: $1.200 ARS/USD
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
